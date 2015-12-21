@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecAnak" value="name:id_anak;datatype:int,name:nama_anak;datatype:string,name:ttl;datatype:date,name:jenis_kelamin;datatype:string,name:gol_darah;datatype:string,name:agama;datatype:string,name:id_ayah;datatype:int,name:id_ibu;datatype:int" />
+	<infoitem key="UD_Recordset1" value="name:id_anak;datatype:int,name:nama_anak;datatype:string,name:ttl;datatype:date,name:jenis_kelamin;datatype:string,name:gol_darah;datatype:string,name:agama;datatype:string,name:id_ayah;datatype:int,name:id_ibu;datatype:int" />
+</info>

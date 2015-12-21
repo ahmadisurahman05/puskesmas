@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_tampil_kb" value="name:nama_ibu;datatype:string,name:nama_suami;datatype:string,name:umur;datatype:int,name:alamat;datatype:string,name:jenis_kb;datatype:string" />
+	<infoitem key="UD_klinik" value="name:nama_ibu;datatype:string,name:nama_suami;datatype:string,name:umur;datatype:int,name:alamat;datatype:string,name:jenis_kb;datatype:string" />
+</info>

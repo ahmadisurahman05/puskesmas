@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:id_imunisasi;datatype:int,name:id_anak;datatype:int,name:umur_anak;datatype:int,name:id_ibu;datatype:int,name:tanggal_imunisasi;datatype:date,name:id_jenis_imunisasi;datatype:int" />
+</info>

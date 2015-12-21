@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_anak" value="name:id_anak;datatype:int,name:nama_anak;datatype:string,name:ttl;datatype:date,name:jenis_kelamin;datatype:string,name:gol_darah;datatype:string,name:agama;datatype:string,name:id_ayah;datatype:int,name:id_ibu;datatype:int" />
+	<infoitem key="UD_ayah" value="name:id_ayah;datatype:int,name:nama_ayah;datatype:string,name:ttl;datatype:date,name:alamat;datatype:blob,name:id_pendidikan;datatype:int,name:pekerjaan;datatype:string,name:gol_darah;datatype:string,name:agama;datatype:string,name:id_ibu;datatype:int" />
+	<infoitem key="UD_ibu" value="name:id_ibu;datatype:int,name:nama_ibu;datatype:string,name:ttl;datatype:date,name:alamat;datatype:string,name:id_pendidikan;datatype:int,name:pekerjaan;datatype:string,name:gol_darah;datatype:string,name:agama;datatype:string,name:id_ayah;datatype:int" />
+	<infoitem key="UD_imunisasi" value="name:id_kartu;datatype:int,name:id_imunisasi;datatype:int,name:id_kia;datatype:int,name:id_anak;datatype:int,name:id_ibu;datatype:int,name:tanggal_imunisasi;datatype:date,name:id_jenis_imunisasi;datatype:int" />
+	<infoitem key="UD_jenis_imunisasi" value="name:id_jenis_imunisasi;datatype:int,name:nama_jenis_imunisasi;datatype:string" />
+	<infoitem key="UD_jenis_kb" value="name:id_jenis_kb;datatype:int,name:nama_jenis_kb;datatype:string" />
+	<infoitem key="UD_kartu_anggota" value="name:id_kartu;datatype:int,name:jenis_periksa;datatype:string" />
+	<infoitem key="UD_kb" value="name:id_kartu;datatype:int,name:id_ibu;datatype:int,name:id_ayah;datatype:int,name:tanggla_kb;datatype:date,name:id_jenis_kb;datatype:int,name:ket;datatype:int" />
+	<infoitem key="UD_kia" value="name:id_kia;datatype:int,name:nama_kia;datatype:string" />
+	<infoitem key="UD_melahirkan" value="name:id_kartu;datatype:int,name:id_kia;datatype:int,name:id_melahirkan;datatype:int,name:id_ibu;datatype:int,name:id_ayah;datatype:int,name:id_anak;datatype:int,name:tanggal_melahirkan;datatype:date,name:ket;datatype:string" />
+	<infoitem key="UD_pendidikan" value="name:id_pendidikan;datatype:int,name:nama_pendidikan;datatype:string" />
+	<infoitem key="UD_periksa_ibu" value="name:id_kartu;datatype:int,name:id_kia;datatype:int,name:id_periksa;datatype:int,name:id_ibu;datatype:int,name:id_ayah;datatype:int,name:Tanggal_periksa;datatype:date,name:Ket;datatype:string" />
+	<infoitem key="UD_umum" value="name:id_kartu;datatype:int,name:id_umum;datatype:int,name:nama;datatype:string,name:umur;datatype:int,name:jenis_kelamin;datatype:string,name:alamat;datatype:blob,name:ket;datatype:string" />
+</info>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_kb" value="name:id_kartu;datatype:int,name:id_ibu;datatype:int,name:id_ayah;datatype:int,name:tanggla_kb;datatype:date,name:id_jenis_kb;datatype:int,name:ket;datatype:int" />
+</info>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RecAyah" value="name:id_ayah;datatype:int,name:nama_ayah;datatype:string,name:ttl;datatype:date,name:alamat;datatype:blob,name:id_pendidikan;datatype:int,name:pekerjaan;datatype:string,name:gol_darah;datatype:string,name:agama;datatype:string,name:id_ibu;datatype:int" />
+	<infoitem key="UD_RecIbu" value="name:id_ibu;datatype:int,name:nama_ibu;datatype:string,name:ttl;datatype:date,name:alamat;datatype:string,name:id_pendidikan;datatype:int,name:pekerjaan;datatype:string,name:gol_darah;datatype:string,name:agama;datatype:string" />
+</info>

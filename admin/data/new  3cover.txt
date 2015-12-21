@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+</head>
+
+<body>
+<?php include "search_data_anak.php";?>
+</br>
+	<table border="1" width="100%">
+		<tr>
+			<td align="center"><b>No</td>
+			<td align="center"><b>Nama Anak</td>
+			<td align="center"><b>Tanggal Lahir</td>
+			<td align="center"><b>Jenis Kelamin</td>
+			<td align="center"><b>Golongan Darah</td>
+			<td align="center"><b>Agama</td>
+			<td align="center"><b>Nama Ayah</td>
+			<td align="center"><b>Nama Ibu</td>
+		</tr>
+<?php 
+	$connect = mysql_connect("localhost", "root", "") or die (mysql_error());
+	mysql_select_db("bidan", $connect);
+	$nama = $_GET['nama'];
+	$tgl = $_GET['tgl'];
+	$ayah = $_GET['ayah'];
+	$ibu = $_GET['ibu'];
+	$jk = $_GET['jenis_kelamin'];
+	$sql = "select tabel_anak.`nama_anak`, tabel_anak.`ttl`, tabel_anak.`jenis_kelamin`, tabel_anak.`gol_darah`, tabel_anak.`agama`, tabel_ayah.`nama_ayah`,tabel_ibu.`nama_ibu` from tabel_anak, tabel_ayah, tabel_ibu where tabel_anak.id_ayah=tabel_ayah.id_ayah and tabel_anak.id_ibu=tabel_ibu.id_ibu and tabel_anak.nama_anak LIKE '%$nama%' and tabel_anak.ttl LIKE '%$tgl%' and tabel_ayah.nama_ayah LIKE '%$ayah%' and tabel_ibu.nama_ibu LIKE '%$ibu%'and tabel_anak.jenis_kelamin LIKE '%$jk%'";
+	$hasil=mysql_query($sql, $connect)or die (mysql_error());
+
+	$data = mysql_num_rows($hasil);
+	$no=0;
+	$no++;
+	if ($data!=null)
+	{
+	while($row=mysql_fetch_array($hasil))
+		{
+
+	?>
+		
+		<tr>
+			<td><?php echo $no++;?></td>
+			<td><?php echo $row['nama_anak'];?></td>
+			<td align="center"><?php echo $row['ttl'];?></td>
+			<td align="center"><?php echo $row['jenis_kelamin'];?></td>
+			<td align="center"><?php echo $row['gol_darah'];?></td>
+			<td align="center"><?php echo $row['agama'];?></td>
+			<td><?php echo $row['nama_ayah'];?></td>
+			<td><?php echo $row['nama_ibu'];?></td>
+		<tr>	
+		
+			
+	<?php
+		}
+	}		
+	else
+	{?>
+		<script language="javascript">
+		alert("Data Tidak Ditemukan");
+		history.back();
+		</Script>
+		<?php
+	}
+	
+?>	
+</table>
+</body>
+</html>
